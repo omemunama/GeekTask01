@@ -147,7 +147,7 @@
         android:id="@+id/fab"
         style="@style/FABStyle01"
         android:src="@drawable/ic_button1"
-        app:layout_anchorGravity="bottom|left"
+        app:layout_anchorGravity="bottom|right"
         app:layout_anchor="@id/viewA" />
 
 </android.support.design.widget.CoordinatorLayout>
