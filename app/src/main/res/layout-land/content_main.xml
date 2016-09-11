@@ -29,7 +29,6 @@
             <EditText
                 android:id="@+id/editText1"
                 android:hint="@string/income"
-                android:textSize="20dp"
                 style="@style/EditTextStyle001"/>
 
             <EditText
@@ -72,29 +71,20 @@
                     style="@style/ButtonLandStyle001"
                     android:layout_column="2"
                     android:text="3" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/button4"
                     style="@style/ButtonLandStyle001"
                     android:layout_weight="1"
+                    android:layout_column="3"
                     android:text="4" />
 
                 <Button
                     android:id="@+id/button5"
                     style="@style/ButtonLandStyle001"
-                    android:layout_column="1"
+                    android:layout_column="4"
                     android:text="5" />
 
-                <Button
-                    android:id="@+id/button6"
-                    style="@style/ButtonLandStyle001"
-                    android:layout_column="2"
-                    android:text="6" />
             </TableRow>
 
             <TableRow
@@ -102,22 +92,35 @@
                 android:layout_height="wrap_content">
 
                 <Button
+                    android:id="@+id/button6"
+                    style="@style/ButtonLandStyle001"
+                    android:text="6" />
+
+                <Button
                     android:id="@+id/button7"
                     style="@style/ButtonLandStyle001"
                     android:layout_weight="1"
+                    android:layout_column="1"
                     android:text="7" />
 
                 <Button
                     android:id="@+id/button8"
                     style="@style/ButtonLandStyle001"
-                    android:layout_column="1"
+                    android:layout_column="2"
                     android:text="8" />
-
+<!---->
                 <Button
                     android:id="@+id/button9"
                     style="@style/ButtonLandStyle001"
-                    android:layout_column="2"
+                    android:layout_column="3"
                     android:text="9" />
+
+                <Button
+                    android:id="@+id/button0"
+                    style="@style/ButtonLandStyle001"
+                    android:layout_column="4"
+                    android:text="0" />
+
             </TableRow>
 
             <TableRow
@@ -130,16 +133,11 @@
                     android:layout_weight="1"
                     android:text="C" />
 
-                <Button
-                    android:id="@+id/button0"
-                    style="@style/ButtonLandStyle001"
-                    android:layout_column="1"
-                    android:text="0" />
 
                 <Button
                     android:id="@+id/buttonBack"
                     style="@style/ButtonLandStyle001"
-                    android:layout_column="2"
+                    android:layout_column="1"
                     android:text="BACK" />
             </TableRow>
 
