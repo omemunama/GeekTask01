@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="nursulaeman.geektask01.MainActivity"
     tools:showIn="@layout/activity_main">
@@ -26,20 +26,34 @@
             android:background="@color/colorWhite"
             android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/editText1"
-                android:hint="@string/income"
-                style="@style/EditTextStyle001"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/editText2"
-                android:hint="@string/outcome"
-                style="@style/EditTextStyle001"/>
+                <EditText
+                    android:id="@+id/editText1"
+                    style="@style/EditTextStyle001"
+                    android:hint="@string/income" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_outcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editText2"
+                    style="@style/EditTextStyle001"
+                    android:hint="@string/outcome" />
+
+            </android.support.design.widget.TextInputLayout>
 
             <TextView
                 android:id="@+id/editText3"
-                android:hint="@string/balance"
-                style="@style/TextViewStyle001"/>
+                style="@style/TextViewStyle001"
+                android:hint="@string/balance" />
 
         </LinearLayout>
 
@@ -75,8 +89,8 @@
                 <Button
                     android:id="@+id/button4"
                     style="@style/ButtonLandStyle001"
-                    android:layout_weight="1"
                     android:layout_column="3"
+                    android:layout_weight="1"
                     android:text="4" />
 
                 <Button
@@ -99,8 +113,8 @@
                 <Button
                     android:id="@+id/button7"
                     style="@style/ButtonLandStyle001"
-                    android:layout_weight="1"
                     android:layout_column="1"
+                    android:layout_weight="1"
                     android:text="7" />
 
                 <Button
@@ -108,7 +122,7 @@
                     style="@style/ButtonLandStyle001"
                     android:layout_column="2"
                     android:text="8" />
-<!---->
+                <!---->
                 <Button
                     android:id="@+id/button9"
                     style="@style/ButtonLandStyle001"
@@ -149,8 +163,8 @@
         android:id="@+id/fab"
         style="@style/FABStyle01"
         android:src="@drawable/ic_button1"
-        app:layout_anchorGravity="bottom|right"
-        app:layout_anchor="@id/viewA" />
+        app:layout_anchor="@id/viewA"
+        app:layout_anchorGravity="bottom|right" />
 
 </android.support.design.widget.CoordinatorLayout>
 

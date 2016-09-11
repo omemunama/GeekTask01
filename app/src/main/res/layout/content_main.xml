@@ -28,15 +28,15 @@
 
             <EditText
                 android:id="@+id/editText1"
-                style="@style/EditTextStyle001"/>
+                style="@style/EditTextStyle001" />
 
             <EditText
                 android:id="@+id/editText2"
-                style="@style/EditTextStyle001"/>
+                style="@style/EditTextStyle001" />
 
             <TextView
                 android:id="@+id/editText3"
-                style="@style/TextViewStyle001"/>
+                style="@style/TextViewStyle001" />
 
         </LinearLayout>
 
@@ -147,8 +147,8 @@
         android:id="@+id/fab"
         style="@style/FABStyle01"
         android:src="@drawable/ic_button1"
-        app:layout_anchorGravity="bottom|left"
-        app:layout_anchor="@id/viewA" />
+        app:layout_anchor="@id/viewA"
+        app:layout_anchorGravity="bottom|left" />
 
 </android.support.design.widget.CoordinatorLayout>
 
