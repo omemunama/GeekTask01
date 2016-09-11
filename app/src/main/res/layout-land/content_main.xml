@@ -28,14 +28,17 @@
 
             <EditText
                 android:id="@+id/editText1"
+                android:hint="@string/income"
                 style="@style/EditTextStyle001"/>
 
             <EditText
                 android:id="@+id/editText2"
+                android:hint="@string/outcome"
                 style="@style/EditTextStyle001"/>
 
             <TextView
                 android:id="@+id/editText3"
+                android:hint="@string/balance"
                 style="@style/TextViewStyle001"/>
 
         </LinearLayout>
@@ -54,18 +57,18 @@
 
                 <Button
                     android:id="@+id/button1"
-                    style="@style/ButtonStyle001"
+                    style="@style/ButtonLandStyle001"
                     android:text="1" />
 
                 <Button
                     android:id="@+id/button2"
-                    style="@style/ButtonStyle001"
+                    style="@style/ButtonLandStyle001"
                     android:layout_column="1"
                     android:text="2" />
 
                 <Button
                     android:id="@+id/button3"
-                    style="@style/ButtonStyle001"
+                    style="@style/ButtonLandStyle001"
                     android:layout_column="2"
                     android:text="3" />
             </TableRow>
@@ -76,19 +79,19 @@
 
                 <Button
                     android:id="@+id/button4"
-                    style="@style/ButtonStyle001"
+                    style="@style/ButtonLandStyle001"
                     android:layout_weight="1"
                     android:text="4" />
 
                 <Button
                     android:id="@+id/button5"
-                    style="@style/ButtonStyle001"
+                    style="@style/ButtonLandStyle001"
                     android:layout_column="1"
                     android:text="5" />
 
                 <Button
                     android:id="@+id/button6"
-                    style="@style/ButtonStyle001"
+                    style="@style/ButtonLandStyle001"
                     android:layout_column="2"
                     android:text="6" />
             </TableRow>
@@ -99,19 +102,19 @@
 
                 <Button
                     android:id="@+id/button7"
-                    style="@style/ButtonStyle001"
+                    style="@style/ButtonLandStyle001"
                     android:layout_weight="1"
                     android:text="7" />
 
                 <Button
                     android:id="@+id/button8"
-                    style="@style/ButtonStyle001"
+                    style="@style/ButtonLandStyle001"
                     android:layout_column="1"
                     android:text="8" />
 
                 <Button
                     android:id="@+id/button9"
-                    style="@style/ButtonStyle001"
+                    style="@style/ButtonLandStyle001"
                     android:layout_column="2"
                     android:text="9" />
             </TableRow>
@@ -122,19 +125,19 @@
 
                 <Button
                     android:id="@+id/buttonC"
-                    style="@style/ButtonStyle001"
+                    style="@style/ButtonLandStyle001"
                     android:layout_weight="1"
                     android:text="C" />
 
                 <Button
                     android:id="@+id/button0"
-                    style="@style/ButtonStyle001"
+                    style="@style/ButtonLandStyle001"
                     android:layout_column="1"
                     android:text="0" />
 
                 <Button
                     android:id="@+id/buttonBack"
-                    style="@style/ButtonStyle001"
+                    style="@style/ButtonLandStyle001"
                     android:layout_column="2"
                     android:text="BACK" />
             </TableRow>

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">GeekTask01</string>
     <string name="action_settings">Seting</string>
+    <string name="income">pemasukan</string>
+    <string name="outcome">pengeluaran</string>
+    <string name="balance">keseimbangan</string>
 </resources>
