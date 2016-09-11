@@ -29,6 +29,7 @@
             <EditText
                 android:id="@+id/editText1"
                 android:hint="@string/income"
+                android:textSize="20dp"
                 style="@style/EditTextStyle001"/>
 
             <EditText
