@@ -6,19 +6,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnC, btnB;
-    EditText editText1, editText2, TextView1;
+    EditText editText1;
+    EditText editText2;
+    TextView textView;
 
-    String evalue;
+    String evalue, result;
+
+    float mValueOne, mValueTwo, mBalance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
         btnB = (Button) findViewById(R.id.buttonBack);
         editText1 = (EditText) findViewById(R.id.editText1);
         editText2 = (EditText) findViewById(R.id.editText2);
+        textView = (TextView) findViewById(R.id.textView1);
+        fab = (FloatingActionButton) findViewById(R.id.fab);
 
         editText1.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -244,6 +252,25 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (TextUtils.isEmpty(editText1.getText().toString())
+                        || TextUtils.isEmpty(editText2.getText().toString())) {
+                    return;
+                }
+                mValueOne = Float.parseFloat(editText1.getText().toString());
+                mValueTwo = Float.parseFloat(editText2.getText().toString());
+                if (mValueOne != 0 && mValueTwo != 0) {
+                    mBalance = mValueOne - mValueTwo;
+                    result = Float.toString(mBalance);
+                    textView.setText(result);
+                }
+            }
+
+        });
+
     }
 
     @Override
