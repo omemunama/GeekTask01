@@ -35,7 +35,7 @@
                 style="@style/EditTextStyle001" />
 
             <TextView
-                android:id="@+id/editText3"
+                android:id="@+id/textView1"
                 style="@style/TextViewStyle001" />
 
         </LinearLayout>
