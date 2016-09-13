@@ -106,20 +106,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String text1 = editText1.getText().toString();
         String text2 = editText2.getText().toString();
 
-/*
-        String text1 = editText1.getText().toString();
-        String text2 = editText2.getText().toString();
-
-        if (text1.isEmpty()) {
-            Toast toast = Toast.makeText(MainActivity.this, "The edit text1 is empty!", Toast.LENGTH_LONG);
-            toast.show();
-        }
-
-        if (text2.isEmpty()) {
-            Toast toast = Toast.makeText(MainActivity.this, "The edit text2 is empty!", Toast.LENGTH_LONG);
-            toast.show();
-        }
-*/
         switch (v.getId()) {
             case R.id.button1:
                 if (evalue == "1") {
@@ -203,10 +189,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.buttonC:
                 if (evalue == "1") {
-                    editText1.setText(" ");
+                    editText1.setText("");
                 }
                 if (evalue == "2") {
-                    editText2.setText(" ");
+                    editText2.setText("");
                 }
                 break;
             case R.id.buttonBack:
@@ -231,36 +217,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.fab:
-                if (TextUtils.isEmpty(editText1.getText().toString())) {
-                    mValueOne = 0;
+                if (text1.isEmpty() && text2.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "text1 & text2 is empty!", Toast.LENGTH_LONG).show();
+                } else if (text1.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "text1 is empty!", Toast.LENGTH_LONG).show();
+                } else if (text2.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "text2 is empty!", Toast.LENGTH_LONG).show();
                 } else {
                     mValueOne = Integer.parseInt(editText1.getText().toString());
-                }
-                if (TextUtils.isEmpty(editText2.getText().toString())) {
-                    mValueTwo = 0;
-                } else {
                     mValueTwo = Integer.parseInt(editText2.getText().toString());
-                }
-
-                if (text1.isEmpty()) {
-                    Toast toast = Toast.makeText(MainActivity.this, "The edit text1 is empty!", Toast.LENGTH_LONG);
-                    toast.show();
-                }
-                if (text2.isEmpty()) {
-                    Toast toast = Toast.makeText(MainActivity.this, "The edit text2 is empty!", Toast.LENGTH_LONG);
-                    toast.show();
-                }
-
-                mBalance = mValueOne - mValueTwo;
-                if (mBalance != 0) {
+                    mBalance = mValueOne - mValueTwo;
                     result = Integer.toString(mBalance);
                     textView.setText(result);
-                } else {
-                    textView.setText("");
                 }
                 break;
         }
-
     }
 
     @Override
