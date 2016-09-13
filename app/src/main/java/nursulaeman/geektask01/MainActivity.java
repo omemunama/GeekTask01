@@ -106,85 +106,88 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String text1 = editText1.getText().toString();
         String text2 = editText2.getText().toString();
 
+        int st1 = editText1.getSelectionStart();
+        int st2 = editText2.getSelectionStart();
+
         switch (v.getId()) {
             case R.id.button1:
                 if (evalue == "1") {
-                    editText1.setText(editText1.getText() + "1");
+                    editText1.setText(editText1.getText().insert(st1, "1"));
                 }
                 if (evalue == "2") {
-                    editText2.setText(editText2.getText() + "1");
+                    editText2.setText(editText2.getText().insert(st2, "1"));
                 }
                 break;
             case R.id.button2:
                 if (evalue == "1") {
-                    editText1.setText(editText1.getText() + "2");
+                    editText1.setText(editText1.getText().insert(st1, "2"));
                 }
                 if (evalue == "2") {
-                    editText2.setText(editText2.getText() + "2");
+                    editText2.setText(editText2.getText().insert(st2, "2"));
                 }
                 break;
             case R.id.button3:
                 if (evalue == "1") {
-                    editText1.setText(editText1.getText() + "3");
+                    editText1.setText(editText1.getText().insert(st1, "3"));
                 }
                 if (evalue == "2") {
-                    editText2.setText(editText2.getText() + "3");
+                    editText2.setText(editText2.getText().insert(st2, "3"));
                 }
                 break;
             case R.id.button4:
                 if (evalue == "1") {
-                    editText1.setText(editText1.getText() + "4");
+                    editText1.setText(editText1.getText().insert(st1, "4"));
                 }
                 if (evalue == "2") {
-                    editText2.setText(editText2.getText() + "4");
+                    editText2.setText(editText2.getText().insert(st2, "4"));
                 }
                 break;
             case R.id.button5:
                 if (evalue == "1") {
-                    editText1.setText(editText1.getText() + "5");
+                    editText1.setText(editText1.getText().insert(st1, "5"));
                 }
                 if (evalue == "2") {
-                    editText2.setText(editText2.getText() + "5");
+                    editText2.setText(editText2.getText().insert(st2, "5"));
                 }
                 break;
             case R.id.button6:
                 if (evalue == "1") {
-                    editText1.setText(editText1.getText() + "6");
+                    editText1.setText(editText1.getText().insert(st1, "6"));
                 }
                 if (evalue == "2") {
-                    editText2.setText(editText2.getText() + "6");
+                    editText2.setText(editText2.getText().insert(st2, "6"));
                 }
                 break;
             case R.id.button7:
                 if (evalue == "1") {
-                    editText1.setText(editText1.getText() + "7");
+                    editText1.setText(editText1.getText().insert(st1, "7"));
                 }
                 if (evalue == "2") {
-                    editText2.setText(editText2.getText() + "7");
+                    editText2.setText(editText2.getText().insert(st2, "7"));
                 }
                 break;
             case R.id.button8:
                 if (evalue == "1") {
-                    editText1.setText(editText1.getText() + "8");
+                    editText1.setText(editText1.getText().insert(st1, "8"));
                 }
                 if (evalue == "2") {
-                    editText2.setText(editText2.getText() + "8");
+                    editText2.setText(editText2.getText().insert(st2, "8"));
                 }
                 break;
             case R.id.button9:
                 if (evalue == "1") {
-                    editText1.setText(editText1.getText() + "9");
+                    editText1.setText(editText1.getText().insert(st1, "9"));
                 }
                 if (evalue == "2") {
-                    editText2.setText(editText2.getText() + "9");
+                    editText2.setText(editText2.getText().insert(st2, "9"));
                 }
                 break;
             case R.id.button0:
                 if (evalue == "1") {
-                    editText1.setText(editText1.getText() + "0");
+                    editText1.setText(editText1.getText().insert(st1, "0"));
                 }
                 if (evalue == "2") {
-                    editText2.setText(editText2.getText() + "0");
+                    editText2.setText(editText2.getText().insert(st2, "0"));
                 }
                 break;
             case R.id.buttonC:
