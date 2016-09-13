@@ -23,11 +23,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/colorWhite"
             android:orientation="vertical">
 
             <EditText
                 android:id="@+id/editText1"
+                android:background="@drawable/rad2"
                 style="@style/EditTextStyle001" />
 
             <EditText
@@ -36,6 +36,7 @@
 
             <TextView
                 android:id="@+id/textView1"
+                android:background="@drawable/rad3"
                 style="@style/TextViewStyle001" />
 
         </LinearLayout>
