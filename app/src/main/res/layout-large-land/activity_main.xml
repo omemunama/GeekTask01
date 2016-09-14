@@ -41,4 +41,10 @@
 
     <include layout="@layout/content_main" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/FABLargeStyle01"
+        android:src="@drawable/ic_button1"
+        app:layout_anchorGravity="bottom|left" />
+
 </android.support.design.widget.CoordinatorLayout>
