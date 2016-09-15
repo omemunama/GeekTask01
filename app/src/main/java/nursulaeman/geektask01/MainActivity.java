@@ -113,101 +113,181 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button1:
                 if (evalue == "1") {
                     editText1.setText(editText1.getText().insert(st1, "1"));
-                    editText1.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText1.setSelection(st1 + 1);
+                    } else {
+                        editText1.setSelection(editText1.getText().length());
+                    }
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "1"));
-                    editText2.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText2.setSelection(st1 + 1);
+                    } else {
+                        editText2.setSelection(editText2.getText().length());
+                    }
                 }
                 break;
             case R.id.button2:
                 if (evalue == "1") {
                     editText1.setText(editText1.getText().insert(st1, "2"));
-                    editText1.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText1.setSelection(st1 + 1);
+                    } else {
+                        editText1.setSelection(editText1.getText().length());
+                    }
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "2"));
-                    editText2.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText2.setSelection(st1 + 1);
+                    } else {
+                        editText2.setSelection(editText2.getText().length());
+                    }
                 }
                 break;
             case R.id.button3:
                 if (evalue == "1") {
                     editText1.setText(editText1.getText().insert(st1, "3"));
-                    editText1.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText1.setSelection(st1 + 1);
+                    } else {
+                        editText1.setSelection(editText1.getText().length());
+                    }
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "3"));
-                    editText2.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText2.setSelection(st1 + 1);
+                    } else {
+                        editText2.setSelection(editText2.getText().length());
+                    }
                 }
                 break;
             case R.id.button4:
                 if (evalue == "1") {
                     editText1.setText(editText1.getText().insert(st1, "4"));
-                    editText1.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText1.setSelection(st1 + 1);
+                    } else {
+                        editText1.setSelection(editText1.getText().length());
+                    }
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "4"));
-                    editText2.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText2.setSelection(st1 + 1);
+                    } else {
+                        editText2.setSelection(editText2.getText().length());
+                    }
                 }
                 break;
             case R.id.button5:
                 if (evalue == "1") {
                     editText1.setText(editText1.getText().insert(st1, "5"));
-                    editText1.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText1.setSelection(st1 + 1);
+                    } else {
+                        editText1.setSelection(editText1.getText().length());
+                    }
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "5"));
-                    editText2.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText2.setSelection(st1 + 1);
+                    } else {
+                        editText2.setSelection(editText2.getText().length());
+                    }
                 }
                 break;
             case R.id.button6:
                 if (evalue == "1") {
                     editText1.setText(editText1.getText().insert(st1, "6"));
-                    editText1.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText1.setSelection(st1 + 1);
+                    } else {
+                        editText1.setSelection(editText1.getText().length());
+                    }
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "6"));
-                    editText2.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText2.setSelection(st1 + 1);
+                    } else {
+                        editText2.setSelection(editText2.getText().length());
+                    }
                 }
                 break;
             case R.id.button7:
                 if (evalue == "1") {
                     editText1.setText(editText1.getText().insert(st1, "7"));
-                    editText1.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText1.setSelection(st1 + 1);
+                    } else {
+                        editText1.setSelection(editText1.getText().length());
+                    }
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "7"));
-                    editText2.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText2.setSelection(st1 + 1);
+                    } else {
+                        editText2.setSelection(editText2.getText().length());
+                    }
                 }
                 break;
             case R.id.button8:
                 if (evalue == "1") {
                     editText1.setText(editText1.getText().insert(st1, "8"));
-                    editText1.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText1.setSelection(st1 + 1);
+                    } else {
+                        editText1.setSelection(editText1.getText().length());
+                    }
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "8"));
-                    editText2.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText2.setSelection(st1 + 1);
+                    } else {
+                        editText2.setSelection(editText2.getText().length());
+                    }
                 }
                 break;
             case R.id.button9:
                 if (evalue == "1") {
                     editText1.setText(editText1.getText().insert(st1, "9"));
-                    editText1.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText1.setSelection(st1 + 1);
+                    } else {
+                        editText1.setSelection(editText1.getText().length());
+                    }
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "9"));
-                    editText2.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText2.setSelection(st1 + 1);
+                    } else {
+                        editText2.setSelection(editText2.getText().length());
+                    }
                 }
                 break;
             case R.id.button0:
                 if (evalue == "1") {
                     editText1.setText(editText1.getText().insert(st1, "0"));
-                    editText1.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText1.setSelection(st1 + 1);
+                    } else {
+                        editText1.setSelection(editText1.getText().length());
+                    }
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "0"));
-                    editText2.setSelection(st1+1);
+                    if (st1 != 0) {
+                        editText2.setSelection(st1 + 1);
+                    } else {
+                        editText2.setSelection(editText2.getText().length());
+                    }
                 }
                 break;
             case R.id.buttonC:
