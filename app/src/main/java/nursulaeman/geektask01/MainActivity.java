@@ -300,21 +300,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.buttonBack:
                 if (evalue == "1") {
-                    String str = editText1.getText().toString();
-                    if (str.length() >= 1) {
-                        str = str.substring(0, str.length() - 1);
-                        editText1.setText(str);
-                    } else if (str.length() <= 1) {
-                        editText1.setText("");
+                    int cursorPosition = editText1.getSelectionStart();
+                    if (cursorPosition > 0) {
+                        editText1.setText(editText1.getText().delete(cursorPosition - 1, cursorPosition));
+                        editText1.setSelection(cursorPosition - 1);
                     }
                 }
                 if (evalue == "2") {
-                    String str = editText2.getText().toString();
-                    if (str.length() >= 1) {
-                        str = str.substring(0, str.length() - 1);
-                        editText2.setText(str);
-                    } else if (str.length() <= 1) {
-                        editText2.setText("");
+                    int cursorPosition = editText2.getSelectionStart();
+                    if (cursorPosition > 0) {
+                        editText2.setText(editText2.getText().delete(cursorPosition - 1, cursorPosition));
+                        editText2.setSelection(cursorPosition - 1);
                     }
                 }
                 break;
