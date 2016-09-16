@@ -121,8 +121,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "1"));
-                    if (st1 != 0) {
-                        editText2.setSelection(st1 + 1);
+                    if (st2 != 0) {
+                        editText2.setSelection(st2 + 1);
                     } else {
                         editText2.setSelection(editText2.getText().length());
                     }
@@ -139,8 +139,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "2"));
-                    if (st1 != 0) {
-                        editText2.setSelection(st1 + 1);
+                    if (st2 != 0) {
+                        editText2.setSelection(st2 + 1);
                     } else {
                         editText2.setSelection(editText2.getText().length());
                     }
@@ -157,8 +157,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "3"));
-                    if (st1 != 0) {
-                        editText2.setSelection(st1 + 1);
+                    if (st2 != 0) {
+                        editText2.setSelection(st2 + 1);
                     } else {
                         editText2.setSelection(editText2.getText().length());
                     }
@@ -175,8 +175,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "4"));
-                    if (st1 != 0) {
-                        editText2.setSelection(st1 + 1);
+                    if (st2 != 0) {
+                        editText2.setSelection(st2 + 1);
                     } else {
                         editText2.setSelection(editText2.getText().length());
                     }
@@ -193,8 +193,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "5"));
-                    if (st1 != 0) {
-                        editText2.setSelection(st1 + 1);
+                    if (st2 != 0) {
+                        editText2.setSelection(st2 + 1);
                     } else {
                         editText2.setSelection(editText2.getText().length());
                     }
@@ -211,8 +211,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "6"));
-                    if (st1 != 0) {
-                        editText2.setSelection(st1 + 1);
+                    if (st2 != 0) {
+                        editText2.setSelection(st2 + 1);
                     } else {
                         editText2.setSelection(editText2.getText().length());
                     }
@@ -229,8 +229,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "7"));
-                    if (st1 != 0) {
-                        editText2.setSelection(st1 + 1);
+                    if (st2 != 0) {
+                        editText2.setSelection(st2 + 1);
                     } else {
                         editText2.setSelection(editText2.getText().length());
                     }
@@ -247,8 +247,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "8"));
-                    if (st1 != 0) {
-                        editText2.setSelection(st1 + 1);
+                    if (st2 != 0) {
+                        editText2.setSelection(st2 + 1);
                     } else {
                         editText2.setSelection(editText2.getText().length());
                     }
@@ -265,8 +265,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "9"));
-                    if (st1 != 0) {
-                        editText2.setSelection(st1 + 1);
+                    if (st2 != 0) {
+                        editText2.setSelection(st2 + 1);
                     } else {
                         editText2.setSelection(editText2.getText().length());
                     }
@@ -283,8 +283,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 if (evalue == "2") {
                     editText2.setText(editText2.getText().insert(st2, "0"));
-                    if (st1 != 0) {
-                        editText2.setSelection(st1 + 1);
+                    if (st2 != 0) {
+                        editText2.setSelection(st2 + 1);
                     } else {
                         editText2.setSelection(editText2.getText().length());
                     }
@@ -307,14 +307,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 }
                 if (evalue == "2") {
-                    int cursorPosition = editText2.getSelectionStart();
-                    if (cursorPosition > 0) {
-                        editText2.setText(editText2.getText().delete(cursorPosition - 1, cursorPosition));
-                        editText2.setSelection(cursorPosition - 1);
+                    int cursorPosition2 = editText2.getSelectionStart();
+                    if (cursorPosition2 > 0) {
+                        editText2.setText(editText2.getText().delete(cursorPosition2 - 1, cursorPosition2));
+                        editText2.setSelection(cursorPosition2 - 1);
                     }
                 }
                 break;
-
             case R.id.fab:
                 if (text1.isEmpty() && text2.isEmpty()) {
                     Toast.makeText(MainActivity.this, "text1 & text2 is empty!", Toast.LENGTH_LONG).show();
