@@ -17,10 +17,10 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnC, btnB;
-    EditText editText1, editText2;
+    EditText editText1, editText2, editTextn;
     TextView textView;
 
-    String evalue, result;
+    String result;
 
     int mValueOne, mValueTwo, mBalance;
 
@@ -81,240 +81,62 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnC.setOnClickListener(this);
         btnB.setOnClickListener(this);
         fab.setOnClickListener(this);
-
-        editText1.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                evalue = "1";
-                return false;
-            }
-        });
-
-        editText2.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                evalue = "2";
-                return false;
-            }
-        });
-
     }
 
     @Override
     public void onClick(View v) {
 
-        String text1 = editText1.getText().toString();
-        String text2 = editText2.getText().toString();
+        if(getCurrentFocus()==editText1){
+            editTextn = editText1;
+        } else if (getCurrentFocus()==editText2){
+            editTextn = editText2;
+        }
 
-        int st1 = editText1.getSelectionStart();
-        int st2 = editText2.getSelectionStart();
+        int strat = editTextn.getSelectionStart();
 
         switch (v.getId()) {
             case R.id.button1:
-                if (evalue == "1") {
-                    editText1.setText(editText1.getText().insert(st1, "1"));
-                    if (st1 != 0) {
-                        editText1.setSelection(st1 + 1);
-                    } else {
-                        editText1.setSelection(editText1.getText().length());
-                    }
-                }
-                if (evalue == "2") {
-                    editText2.setText(editText2.getText().insert(st2, "1"));
-                    if (st2 != 0) {
-                        editText2.setSelection(st2 + 1);
-                    } else {
-                        editText2.setSelection(editText2.getText().length());
-                    }
-                }
+                btn(strat,"1");
                 break;
             case R.id.button2:
-                if (evalue == "1") {
-                    editText1.setText(editText1.getText().insert(st1, "2"));
-                    if (st1 != 0) {
-                        editText1.setSelection(st1 + 1);
-                    } else {
-                        editText1.setSelection(editText1.getText().length());
-                    }
-                }
-                if (evalue == "2") {
-                    editText2.setText(editText2.getText().insert(st2, "2"));
-                    if (st2 != 0) {
-                        editText2.setSelection(st2 + 1);
-                    } else {
-                        editText2.setSelection(editText2.getText().length());
-                    }
-                }
+                btn(strat,"2");
                 break;
             case R.id.button3:
-                if (evalue == "1") {
-                    editText1.setText(editText1.getText().insert(st1, "3"));
-                    if (st1 != 0) {
-                        editText1.setSelection(st1 + 1);
-                    } else {
-                        editText1.setSelection(editText1.getText().length());
-                    }
-                }
-                if (evalue == "2") {
-                    editText2.setText(editText2.getText().insert(st2, "3"));
-                    if (st2 != 0) {
-                        editText2.setSelection(st2 + 1);
-                    } else {
-                        editText2.setSelection(editText2.getText().length());
-                    }
-                }
+                btn(strat,"3");
                 break;
             case R.id.button4:
-                if (evalue == "1") {
-                    editText1.setText(editText1.getText().insert(st1, "4"));
-                    if (st1 != 0) {
-                        editText1.setSelection(st1 + 1);
-                    } else {
-                        editText1.setSelection(editText1.getText().length());
-                    }
-                }
-                if (evalue == "2") {
-                    editText2.setText(editText2.getText().insert(st2, "4"));
-                    if (st2 != 0) {
-                        editText2.setSelection(st2 + 1);
-                    } else {
-                        editText2.setSelection(editText2.getText().length());
-                    }
-                }
+                btn(strat,"4");
                 break;
             case R.id.button5:
-                if (evalue == "1") {
-                    editText1.setText(editText1.getText().insert(st1, "5"));
-                    if (st1 != 0) {
-                        editText1.setSelection(st1 + 1);
-                    } else {
-                        editText1.setSelection(editText1.getText().length());
-                    }
-                }
-                if (evalue == "2") {
-                    editText2.setText(editText2.getText().insert(st2, "5"));
-                    if (st2 != 0) {
-                        editText2.setSelection(st2 + 1);
-                    } else {
-                        editText2.setSelection(editText2.getText().length());
-                    }
-                }
+                btn(strat,"5");
                 break;
             case R.id.button6:
-                if (evalue == "1") {
-                    editText1.setText(editText1.getText().insert(st1, "6"));
-                    if (st1 != 0) {
-                        editText1.setSelection(st1 + 1);
-                    } else {
-                        editText1.setSelection(editText1.getText().length());
-                    }
-                }
-                if (evalue == "2") {
-                    editText2.setText(editText2.getText().insert(st2, "6"));
-                    if (st2 != 0) {
-                        editText2.setSelection(st2 + 1);
-                    } else {
-                        editText2.setSelection(editText2.getText().length());
-                    }
-                }
+                btn(strat,"6");
                 break;
             case R.id.button7:
-                if (evalue == "1") {
-                    editText1.setText(editText1.getText().insert(st1, "7"));
-                    if (st1 != 0) {
-                        editText1.setSelection(st1 + 1);
-                    } else {
-                        editText1.setSelection(editText1.getText().length());
-                    }
-                }
-                if (evalue == "2") {
-                    editText2.setText(editText2.getText().insert(st2, "7"));
-                    if (st2 != 0) {
-                        editText2.setSelection(st2 + 1);
-                    } else {
-                        editText2.setSelection(editText2.getText().length());
-                    }
-                }
+                btn(strat,"7");
                 break;
             case R.id.button8:
-                if (evalue == "1") {
-                    editText1.setText(editText1.getText().insert(st1, "8"));
-                    if (st1 != 0) {
-                        editText1.setSelection(st1 + 1);
-                    } else {
-                        editText1.setSelection(editText1.getText().length());
-                    }
-                }
-                if (evalue == "2") {
-                    editText2.setText(editText2.getText().insert(st2, "8"));
-                    if (st2 != 0) {
-                        editText2.setSelection(st2 + 1);
-                    } else {
-                        editText2.setSelection(editText2.getText().length());
-                    }
-                }
+                btn(strat,"8");
                 break;
             case R.id.button9:
-                if (evalue == "1") {
-                    editText1.setText(editText1.getText().insert(st1, "9"));
-                    if (st1 != 0) {
-                        editText1.setSelection(st1 + 1);
-                    } else {
-                        editText1.setSelection(editText1.getText().length());
-                    }
-                }
-                if (evalue == "2") {
-                    editText2.setText(editText2.getText().insert(st2, "9"));
-                    if (st2 != 0) {
-                        editText2.setSelection(st2 + 1);
-                    } else {
-                        editText2.setSelection(editText2.getText().length());
-                    }
-                }
+                btn(strat,"9");
                 break;
             case R.id.button0:
-                if (evalue == "1") {
-                    editText1.setText(editText1.getText().insert(st1, "0"));
-                    if (st1 != 0) {
-                        editText1.setSelection(st1 + 1);
-                    } else {
-                        editText1.setSelection(editText1.getText().length());
-                    }
-                }
-                if (evalue == "2") {
-                    editText2.setText(editText2.getText().insert(st2, "0"));
-                    if (st2 != 0) {
-                        editText2.setSelection(st2 + 1);
-                    } else {
-                        editText2.setSelection(editText2.getText().length());
-                    }
-                }
+                btn(strat,"0");
                 break;
             case R.id.buttonC:
-                if (evalue == "1") {
-                    editText1.setText("");
-                }
-                if (evalue == "2") {
-                    editText2.setText("");
-                }
+                editTextn.setText("");
                 break;
             case R.id.buttonBack:
-                if (evalue == "1") {
-                    int cursorPosition = editText1.getSelectionStart();
-                    if (cursorPosition > 0) {
-                        editText1.setText(editText1.getText().delete(cursorPosition - 1, cursorPosition));
-                        editText1.setSelection(cursorPosition - 1);
-                    }
-                }
-                if (evalue == "2") {
-                    int cursorPosition2 = editText2.getSelectionStart();
-                    if (cursorPosition2 > 0) {
-                        editText2.setText(editText2.getText().delete(cursorPosition2 - 1, cursorPosition2));
-                        editText2.setSelection(cursorPosition2 - 1);
-                    }
+                if (strat > 0) {
+                    editTextn.setText(editTextn.getText().delete(strat - 1, strat));
+                    editTextn.setSelection(strat - 1);
                 }
                 break;
             case R.id.fab:
+                String text1 = editText1.getText().toString();
+                String text2 = editText2.getText().toString();
                 if (text1.isEmpty() && text2.isEmpty()) {
                     Toast.makeText(MainActivity.this, "text1 & text2 is empty!", Toast.LENGTH_LONG).show();
                 } else if (text1.isEmpty()) {
@@ -332,11 +154,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+    public void btn(int start,String s){
+        editTextn.setText(editTextn.getText().insert(start, s));
+        editTextn.setSelection(start + 1);
     }
 
 }
